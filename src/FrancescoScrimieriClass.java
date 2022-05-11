@@ -25,10 +25,10 @@ public class FrancescoScrimieriClass {
 	 */
 	public int ScrimieriMet(int s, int f)
 	{
-		int r = 0;
-		for(int i = 1; i < f; i++)
+		int r = 1; // uguale ad 1
+		for(int i = s; i <= f; i++) // i = s perchè è lo start
 		{
-			r = f*i;
+			r*=(i*i);// formula errata , la formula corretta è r*=(i*i)
 		}
 		return r;
 	}
